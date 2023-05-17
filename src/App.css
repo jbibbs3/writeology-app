@@ -4,7 +4,10 @@
   
 }
 
-
+h3 {
+  padding-top: 30px;
+  padding-left: 10px;
+}
 
 .App-logo {
   height: 40vmin;

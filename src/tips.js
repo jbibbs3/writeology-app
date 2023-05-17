@@ -1,20 +1,23 @@
-import { useState } from "react";
 
-const [title, setTitle] = useState('')
-const [paragraph, setParagraph] = useState('')
+const Tips = ({title, paragraph}) => {
 
-const Tips = () => {
+  const styles = {
+        title: {
+           color:"gray"
+
+        },
+        
+        tips: {
+          paddingLeft:"10px"
+        }
+  }
 
 
 return (
 
-  <div className="Tips">
-    <section>
-   
-    </section>
-    <section className="Paragraph">
-       
-    </section>
+  <div style={styles.tips}className="Tips">
+    <h4 style={styles.title} class="title">{title}</h4>
+    <div class="paragraph">{paragraph}</div>
   </div>
 
 )
